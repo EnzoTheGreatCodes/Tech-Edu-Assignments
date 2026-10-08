@@ -1,0 +1,71 @@
+@media only screen and (max-width: 480px){
+    .hero .nav{
+        flex-direction: column;
+        height: 100vh;
+        display: none !important;
+    }
+
+    .hero .nav .logo img{
+        position: absolute;
+        right: 70%;
+        top:10px;
+        width: 1% !important;
+        display: none;
+    }
+    .hero .nav .nav-links{
+        flex-direction: column;
+        font-size: 1.5rem;
+    }
+    .hero .nav-bar{
+        background-color: #398E8A;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 0.3rem 0rem;
+         position: fixed;
+         z-index: 1;
+         width: 100%;
+         color: white;
+         height: 3rem;
+    }
+    .hero .nav-bar .menu .open{
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .hero header{
+        display: flex;
+        flex-direction: column !important;
+        clip-path: none !important;
+    }
+    .hero .hero-img{
+        position: absolute;
+        left: 2rem !important;
+        top: 28rem !important;
+        
+    }
+    .hero .hero-img img{
+        max-width: 100%;
+        height: auto;
+    }
+    .hero .hero-img .card{
+        position: absolute;
+        right: 16rem;
+        width: 22% !important;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about .left .btns-2 .vector{
+        font-size: 0.5rem !important;
+    }
+    .about .right .skills .skill-box{
+        padding: 10px!important;
+    }
+    .about .left .btns-2 .vector img{
+        width: 1rem;
+    }
+    .about .left .btns-2 .socials img{
+        width: 2rem !important;
+    }
+
+}

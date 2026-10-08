@@ -1,0 +1,428 @@
+.hero .nav{
+    background-color: #398E8A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.2rem 0;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    
+}
+
+body{
+    margin: 0;
+}
+.hero .nav .logo img{
+    width: 60%;
+    height: 50%;
+}
+.hero .nav .nav-links{
+    display: flex;
+    gap: 1rem;
+}
+.hero .nav .nav-links a{
+    color: white;
+    text-decoration: none;
+}
+.hero .nav .btns{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: white;
+    border: 2px solid #D4BFEC;
+    border-radius: 20px;
+    padding: 0.8rem 1rem;
+}
+.hero .nav .btns img{
+    width: 20px;
+}
+.hero .nav-bar{
+    display: none;
+}
+.hero header {
+    background-color: #074643;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    height: 100vh;
+    clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 55%,
+    90% 68%,
+    75% 80%,
+    60% 88%,
+    45% 93%,
+    25% 96%,
+    10% 95%,
+    0% 92%
+);
+
+}
+.hero .hero-img .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: white;
+    color: black;
+    max-width: fit-content;
+    padding: 0.4rem 1.2rem;
+    border-radius: 30px;
+    position: absolute;
+    top: 60%;
+    right: 85%;
+}
+.hero .hero-img .card #h1{
+     font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: "inter";
+}
+.hero .hero-img .card #h2{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "inter";
+}
+.hero .hero-img{
+    position: absolute;
+    top: 10rem;
+    left: 47rem;
+    
+}
+.hero .hero-img img{
+    width: 27rem;
+    height: 30rem;
+}
+.hero header .text .txt h1{
+    font-family: "train one";
+    font-weight: 400;
+}
+.hero header .text .btns .icon img{
+    width: 8px;
+    height: 8px;
+}
+.hero header .text .btns .icon{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.hero header .hero-img .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: white;
+    color: black;
+    max-width: fit-content;
+    padding: 0.4rem 1.2rem;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    right: 52%;
+}
+
+.btns{ 
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.button{
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 0.8rem 1rem;
+    color: white;
+    font-weight: bold;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    padding:60px 20px;
+    gap: 40px;
+}
+.left,.right{
+    flex: 1;
+}
+.left h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.btns-2 .vector{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.8rem 1rem;
+    background-color: #101C1B;
+    max-width:fit-content;
+    font-weight: bold;
+}
+.info .bar{
+    border: solid 1px black;
+    padding:15px;
+    border-radius: 44px;
+    margin-bottom: 10px;
+    background-color: #F7F8FD;
+    font-weight: 700;
+   
+}
+.right h3{
+    font-size: 40px;
+    margin:30px 0;
+    font-family: "whisper";
+}
+ 
+.skills{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+.skill-box{
+    border:6px solid #398E8A;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    border-color: green black black green;
+}
+.skill-box h2{
+    font-size: 40px;
+}
+.btns-2{
+    display: flex;
+    gap: 1rem;
+}
+.h1-1{
+    font-size: 40px;
+    font-family: "inter";
+}
+.hero header .text .txt p{
+    font-weight: 100;
+}
+.about .left .info .white{
+    padding:10px;
+    font-weight: 700;
+   
+}
+
+*{
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+}
+.hero{
+    position: relative;
+}
+.hero .nav{
+    width: 100%;
+    padding: 0.35rem clamp(1rem, 4vw, 3rem);
+}
+.hero .nav .logo img{
+    display: block;
+    width: 5rem;
+    height: auto;
+}
+.hero .nav .nav-links{
+    gap: clamp(0.6rem, 1.5vw, 1.4rem);
+}
+.hero header{
+    min-height: 42rem;
+    height: 100vh;
+    padding: 5rem 8vw 8rem;
+}
+.hero header .text{
+    width: min(44%, 34rem);
+}
+.hero header .text .txt p{
+    line-height: 1.6;
+}
+.hero .hero-img{
+    top: 8rem;
+    left: auto;
+    right: 9%;
+}
+.hero .hero-img img{
+    display: block;
+    width: clamp(18rem, 34vw, 27rem);
+    height: auto;
+}
+.hero .hero-img .card{
+    top: 54%;
+    right: auto;
+    left: -2rem;
+}
+.about{
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 4rem clamp(1.25rem, 5vw, 4rem);
+}
+.about .right > p{
+    line-height: 1.7;
+}
+.about .left .btns-2{
+    flex-wrap: wrap;
+    align-items: center;
+}
+.about .left .socials{
+    display: flex;
+    align-items: center;
+}
+.about .left .socials img{
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+}
+.skill-box{
+    min-width: 0;
+    padding: clamp(1rem, 3vw, 2.5rem);
+}
+
+@media (max-width: 900px){
+    .hero .nav{
+        justify-content: space-between;
+    }
+    .hero .nav .nav-links{
+        gap: 0.75rem;
+        font-size: 0.9rem;
+    }
+    .hero .nav .btns{
+        padding: 0.6rem 0.75rem;
+    }
+    .hero header{
+        min-height: 38rem;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    .hero header .text{
+        width: 46%;
+    }
+    .hero .hero-img{
+        right: 5%;
+    }
+    .about{
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 700px){
+    .hero .nav{
+        display: none;
+    }
+    .hero .nav-bar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 3.75rem;
+        padding: 0.4rem 1rem;
+        background-color: #398E8A;
+        color: white;
+        z-index: 2;
+    }
+    .hero .nav-bar .logo img{
+        display: block;
+        width: 4rem;
+        height: auto;
+    }
+    .hero .nav-bar .menu .open{
+        font-size: 1.6rem;
+    }
+    .hero header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 0;
+        height: auto;
+        padding: 6.5rem 1.25rem 2rem;
+        clip-path: none;
+    }
+    .hero header .text{
+        width: 100%;
+    }
+    .hero header .text .txt h1{
+        margin-bottom: 0.5rem;
+    }
+    .hero header .text .txt h2{
+        font-size: clamp(2rem, 10vw, 2.5rem);
+        overflow-wrap: anywhere;
+    }
+    .hero header .text .btns{
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+    .hero .hero-img{
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+        width: fit-content;
+        max-width: calc(100% - 2.5rem);
+        margin: 1.5rem auto 2rem;
+    }
+    .hero .hero-img img{
+        width: min(76vw, 21rem);
+        max-width: 100%;
+        height: auto;
+    }
+    .hero .hero-img .card{
+        top: 52%;
+        left: -1rem;
+        padding: 0.4rem 0.8rem;
+        border-radius: 1.25rem;
+    }
+    .hero .hero-img .card #h1{
+        font-size: 2rem;
+    }
+    .hero .hero-img .card #h2{
+        font-size: 0.9rem;
+    }
+    .about{
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2.5rem 1.25rem;
+    }
+    .about .left, .about .right{
+        width: 100%;
+    }
+    .about .left h2, .about .right h3{
+        font-size: 2rem;
+    }
+    .about .right > p br{
+        display: none;
+    }
+    .about .skills{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.75rem;
+    }
+    .about .skills .skill-box{
+        padding: 1rem 0.5rem;
+        border-width: 4px;
+    }
+    .about .skills .skill-box h2{
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 360px){
+    .hero header .text .btns .button{
+        padding: 0.7rem 0.75rem;
+        font-size: 0.75rem;
+    }
+    .about .left .btns-2{
+        gap: 0.75rem;
+    }
+    .about .left .btns-2 .vector{
+        padding: 0.7rem 0.75rem;
+        font-size: 0.7rem;
+    }
+}

@@ -1,0 +1,17 @@
+.body {
+    font-family: noto sans, sans-serif;
+}
+.boxex {
+display: flex;
+justify-content: center;
+gap: 12px;
+margin-top: 10px;
+}
+
+ .boxex .box {
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 180px;
+    padding: 5px;
+    margin: 2px;
+height: 250px;}

@@ -1,0 +1,18 @@
+@media only screen and (max-width: 320px){
+    .hero header{
+        height: 100vh !important;
+        font-size: xx-small;
+    }
+    .hero .hero-img{
+        position: relative !important;
+        transform: translateY(-29rem);
+        width: 100vw !important;
+    }
+    .hero .hero-img .card{
+        position: absolute;
+        right: 15rem !important;
+    }
+    .about .right .skills .skill-box{
+        padding: 6px!important;
+    }
+}

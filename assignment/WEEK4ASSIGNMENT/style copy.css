@@ -1,0 +1,214 @@
+@import url(/mobile.css);
+@import url(/tablet.css);
+@import url(/small\ screen.css);
+
+.hero .nav{
+    background-color: #398E8A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.2rem 0;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    
+}
+
+body{
+    margin: 0;
+}
+.hero .nav .logo img{
+    width: 60%;
+    height: 50%;
+}
+.hero .nav .nav-links{
+    display: flex;
+    gap: 1rem;
+}
+.hero .nav .nav-links a{
+    color: white;
+    text-decoration: none;
+}
+.hero .nav .btns{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: white;
+    border: 2px solid #D4BFEC;
+    border-radius: 20px;
+    padding: 0.8rem 1rem;
+}
+.hero .nav .btns img{
+    width: 20px;
+}
+.hero .nav-bar{
+    display: none;
+}
+.hero header {
+    background-color: #074643;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    height: 100vh;
+    clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 55%,
+    90% 68%,
+    75% 80%,
+    60% 88%,
+    45% 93%,
+    25% 96%,
+    10% 95%,
+    0% 92%
+);
+
+}
+.hero .hero-img .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: white;
+    color: black;
+    max-width: fit-content;
+    padding: 0.4rem 1.2rem;
+    border-radius: 30px;
+    position: absolute;
+    top: 60%;
+    right: 85%;
+}
+.hero .hero-img .card #h1{
+     font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: "inter";
+}
+.hero .hero-img .card #h2{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "inter";
+}
+.hero .hero-img{
+    position: absolute;
+    top: 10rem;
+    left: 47rem;
+    
+}
+.hero .hero-img img{
+    width: 27rem;
+    height: 30rem;
+}
+.hero header .text .txt h1{
+    font-family: "train one";
+    font-weight: 400;
+}
+.hero header .text .btns .icon img{
+    width: 8px;
+    height: 8px;
+}
+.hero header .text .btns .icon{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.hero header .hero-img .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: white;
+    color: black;
+    max-width: fit-content;
+    padding: 0.4rem 1.2rem;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    right: 52%;
+}
+
+.btns{ 
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.button{
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 0.8rem 1rem;
+    color: white;
+    font-weight: bold;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    padding:60px 20px;
+    gap: 40px;
+}
+.left,.right{
+    flex: 1;
+}
+.left h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.btns-2 .vector{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.8rem 1rem;
+    background-color: #101C1B;
+    max-width:fit-content;
+    font-weight: bold;
+}
+.info .bar{
+    border: solid 1px black;
+    padding:15px;
+    border-radius: 44px;
+    margin-bottom: 10px;
+    background-color: #F7F8FD;
+    font-weight: 700;
+   
+}
+.right h3{
+    font-size: 40px;
+    margin:30px 0;
+    font-family: "whisper";
+}
+ 
+.skills{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+.skill-box{
+    border:6px solid #398E8A;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    border-color: green black black green;
+}
+.skill-box h2{
+    font-size: 40px;
+}
+.btns-2{
+    display: flex;
+    gap: 1rem;
+}
+.h1-1{
+    font-size: 40px;
+    font-family: "inter";
+}
+.hero header .text .txt p{
+    font-weight: 100;
+}
+.about .left .info .white{
+    padding:10px;
+    font-weight: 700;
+   
+}

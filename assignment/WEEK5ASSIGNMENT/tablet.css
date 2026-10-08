@@ -1,0 +1,31 @@
+@media (min-width :481px) and (max-width: 1024px){
+    .hero header{
+        clip-path: none !important;
+        justify-content:space-around !important;
+        align-items: flex-start !important;
+        padding: 4rem;
+        height: 95vh !important;
+    }
+    .hero .nav{
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
+    .hero .hero-img{
+        position: absolute;
+        left: 20rem !important;
+        top: 35rem !important;
+    }
+    .hero header .text{
+        position: absolute;
+        left: 5rem;
+        font-size:xx-large;
+    }
+    .about .left .btns-2 .vector{
+        font-size: 0.5rem !important;
+    }
+    .about .right .skills .skill-box{
+        padding: 10px!important;
+    }
+
+}
