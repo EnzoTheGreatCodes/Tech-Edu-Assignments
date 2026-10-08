@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PIGON Authentication</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="app">
+        <section id="splash" class="screen splash-screen">
+
+            <div class="logo-box">
+                <span class="logo-wing">
+                    <img src="assets/YouTube Intro 1920x1080 px (1) 1.png" alt="">
+                </span>
+            </div>
+        </section>
+        <section id="welcome" class="screen auth-screen hidden">
+
+            <div class="green-header">
+
+                <button class="back-button" onclick="showScreen('splash')">
+                    ‹
+                </button>
+
+                <h1>Welcome</h1>
+
+                <p>
+                    Please login or sign up to continue
+                    using our app.
+                </p>
+
+            </div>
+            <div class="auth-content">
+
+                <h3>Enter Via Social Networks</h3>
+                <div class="social-buttons">
+
+                    <button class="social-button">
+                        <b>f</b>
+                    </button>
+
+                    <button class="social-button">
+                        ◎
+                    </button>
+                </div>
+                <div class="or">
+                    OR
+                </div>
+                <p class="email-option">
+                    login with email
+                </p>
+
+                <button
+                    class="main-button"
+                    onclick="showScreen('signup')">
+                    Sign up
+                </button>
+
+                <p class="bottom-text">
+                    You already have an account?
+                    <button
+                        class="link-button"
+                        onclick="showScreen('login')">
+                        Login
+                    </button>
+                </p>
+
+            </div>
+        </section>
+        <section id="signup" class="screen auth-screen hidden">
+
+            <div class="green-header">
+
+                <button
+                    class="back-button"
+                    onclick="showScreen('welcome')">
+                    ‹
+                </button>
+
+                <h1>Sign Up</h1>
+
+                <p>
+                    Please Register with email and
+                    sign up to continue using our app.
+                </p>
+
+            </div>
+
+
+            <div class="auth-content">
+
+                <h3>Enter Via Social Networks</h3>
+
+                <div class="social-buttons">
+
+                    <button class="social-button">
+                        <b>f</b>
+                    </button>
+
+                    <button class="social-button">
+                        ◎
+                    </button>
+
+                </div>
+
+                <div class="or">
+                    OR
+                </div>
+
+                <p class="email-option">
+                    login with email
+                </p>
+
+
+                <div class="input-group">
+
+                    <input
+                        type="email"
+                        placeholder="Email">
+
+                    <div class="password-container">
+
+                        <input
+                            type="password"
+                            id="signupPassword"
+                            placeholder="Password">
+
+                        <button
+                            class="eye"
+                            onclick="togglePassword('signupPassword')">
+                            ◉
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <label class="checkbox">
+
+                    <input type="checkbox">
+
+                    <span>
+                        I agree with privacy policy
+                    </span>
+
+                </label>
+
+                <button class="main-button">
+                    Sign up
+                </button>
+                <p class="bottom-text">
+                    You already have an account?
+                    <button
+                        class="link-button"
+                        onclick="showScreen('login')">
+                        Login
+                    </button>
+
+                </p>
+
+            </div>
+
+        </section>
+        <section id="login" class="screen auth-screen hidden">
+
+            <div class="green-header">
+
+                <button
+                    class="back-button"
+                    onclick="showScreen('welcome')">
+                    ‹
+                </button>
+
+                <h1>Login Now</h1>
+
+                <p>
+                    Please login to continue using our app.
+                </p>
+
+            </div>
+            <div class="auth-content">
+
+                <h3>Enter Via Social Networks</h3>
+
+                <div class="social-buttons">
+
+                    <button class="social-button">
+                        <b>f</b>
+                    </button>
+
+                    <button class="social-button">
+                        ◎
+                    </button>
+
+                </div>
+
+                <div class="or">
+                    OR
+                </div>
+
+                <p class="email-option">
+                    login with email
+                </p>
+
+
+                <div class="input-group">
+
+                    <input
+                        type="email"
+                        placeholder="Email">
+
+                    <div class="password-container">
+
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            placeholder="Password">
+
+                        <button
+                            class="eye"
+                            onclick="togglePassword('loginPassword')">
+                            ◉
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <button class="forgot-password">
+                    Forgot password
+                </button>
+
+
+                <button class="main-button">
+                    Login
+                </button>
+                <p class="bottom-text">
+                    Don't have an account?
+                    <button
+                        class="link-button"
+                        onclick="showScreen('signup')">
+                        Sign Up
+                    </button>
+                </p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+</html>

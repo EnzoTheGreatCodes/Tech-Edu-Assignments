@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techember Fest '25</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">
+            <span>◈</span> ticz
+        </a>
+        <nav class="nav-links">
+            <a href="#tickets">Events</a>
+            <a href="#tickets">My Tickets</a>
+            <a href="#about">About Project</a>
+        </nav>
+        <button class="my-ticket-btn" id="myTicketsBtn">
+            MY TICKETS →
+        </button>
+    </header>
+    <section class="hero">
+        <div class="hero-glow"></div>
+    </section>
+    <main class="booking-layout">
+        <section class="booking-card">
+            <div class="section-header">
+                <div>
+                    <p class="step-text">
+                        Step <span id="stepNumber">1</span>/2
+                    </p>
+                    <h2 id="stepTitle">
+                        Ticket Selection
+                    </h2>
+                </div>
+                <div class="progress">
+                    <span id="progressBar"></span>
+                </div>
+
+            </div>
+
+            <div id="ticketStep">
+
+                <div class="event-info">
+
+                    <div>
+
+                        <h3>
+                            Techember Fest '25
+                        </h3>
+
+                        <p>
+                           Join us for an unforgettable experience at [Event Name]! Secure your spot now.
+                        </p>
+
+                        <p>
+                         📍 [Event Location] | | March 15, 2025 | 7:00 PM
+                        </p>
+
+                    </div>
+
+                    <span class="live-badge">
+                        LIVE EVENT
+                    </span>
+
+                </div>
+
+                <div
+                    class="ticket-grid"
+                    id="ticketGrid">
+                </div>
+
+
+                <button
+                    class="primary-btn full-width"
+                    id="continueBtn"
+                    disabled>
+
+                    Continue →
+
+                </button>
+
+            </div>
+            <div
+                id="detailsStep"
+                class="hidden">
+
+                <form id="bookingForm">
+
+                    <div class="upload-section">
+
+                        <label>
+                            Upload Profile Photo
+                        </label>
+                        <input
+                            type="file"
+                            id="avatarInput"
+                            accept="image/*"
+                            hidden
+                        >
+                        <button
+                            type="button"
+                            class="upload-box"
+                            id="uploadTrigger">
+
+                            <div
+                                class="avatar-preview"
+                                id="avatarPreview">
+
+                                ☁
+
+                            </div>
+
+                            <strong id="uploadText">
+                                Drag & drop or click to upload
+                            </strong>
+
+                            <small>
+                                PNG, JPG or WEBP · max 5MB
+                            </small>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="divider"></div>
+
+                    <label>
+                        Enter your name
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Your full name"
+                            required
+                        >
+
+                    </label>
+
+
+                    <label>
+                        Enter your email *
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="hello@example.com"
+                            required
+                        >
+
+                    </label>
+
+                    <label>
+                        Special request?
+
+                        <textarea
+                            id="specialRequest"
+                            rows="4"
+                            placeholder="Text area">
+                        </textarea>
+
+                    </label>
+
+                    <div class="selected-ticket">
+
+                        <span>
+                            Selected ticket
+                        </span>
+
+                        <strong id="selectedTicketLabel">
+                            —
+                        </strong>
+
+                    </div>
+
+                    <div class="form-buttons">
+
+                        <button
+                            type="button"
+                            class="secondary-btn"
+                            id="backBtn">
+
+                            Back
+
+                        </button>
+
+                        <button
+                            type="submit"
+                            class="primary-btn">
+
+                            Pay & Get My Ticket →
+
+                        </button>
+
+                    </div>
+
+
+                   
+
+                    <p
+                        class="form-error"
+                        id="formError">
+                    </p>
+
+                </form>
+
+            </div>
+
+
+            <div
+                id="successStep"
+                class="hidden">
+
+                <div class="success-message">
+
+                    <div class="success-icon">
+                        ✓
+                    </div>
+
+                    <p class="eyebrow">
+                        PAYMENT CONFIRMED
+                    </p>
+
+                    <h2>
+                        Your Ticket is Booked!
+                    </h2>
+
+                    <p>
+                        Your ticket has been generated and
+                        your details are shown below.
+                    </p>
+
+                </div>
+
+
+            
+
+                <div class="ticket-card">
+
+                    <div class="ticket-top">
+
+                        <h3>
+                            Techember Fest '25
+                        </h3>
+
+                        <p>
+                            📍 04 Grounds, Lagos, Nigeria
+                        </p>
+
+                        <p>
+                            📅 March 11, 2025 · 7:00 PM
+                        </p>
+
+                    </div>
+
+
+             
+
+                    <div class="ticket-photo">
+
+                        <img
+                            id="ticketAvatar"
+                            src=""
+                            alt="Attendee photo">
+
+                    </div>
+
+
+          
+
+                    <div class="ticket-information">
+
+                        <div>
+                            <span>Name</span>
+                            <strong id="resultName">
+                                —
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>Ticket Type</span>
+                            <strong id="resultType">
+                                —
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>Ticket ID</span>
+                            <strong id="resultId">
+                                —
+                            </strong>
+                        </div>
+
+                        <div class="wide">
+                            <span>Special Request</span>
+                            <strong id="resultRequest">
+                                —
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                 
+
+                    <div class="barcode-container">
+
+                        <div
+                            class="barcode"
+                            id="barcode">
+                        </div>
+
+                        <small id="barcodeText">
+                            TKT-000000
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+             
+
+                <div class="form-buttons">
+
+                    <button
+                        class="secondary-btn"
+                        id="bookAnotherBtn">
+
+                        Book Another Ticket
+
+                    </button>
+
+                    <button
+                        class="primary-btn"
+                        id="downloadBtn">
+
+                        Download Ticket
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <aside class="mobile-preview">
+
+            <div class="phone">
+
+                <div class="phone-notch"></div>
+
+                <div class="phone-screen">
+
+                    <div class="phone-nav">
+
+                        <span>
+                            ◈ tix
+                        </span>
+
+                        <button>
+                            MY TICKETS →
+                        </button>
+
+                    </div>
+
+                    <div class="phone-card">
+
+                        <p>
+                            Attendee Details
+                        </p>
+
+                        <div class="phone-progress"></div>
+
+                        <div class="phone-upload">
+                            ☁
+                            <span>
+                                Drag & drop or click to upload
+                            </span>
+                        </div>
+
+                        <div class="phone-input"></div>
+                        <div class="phone-input"></div>
+                        <div class="phone-textarea"></div>
+
+                        <button>
+                            Get My Free Ticket
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+
+    <footer>
+
+        Techember Fest '25
+
+    </footer>
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>

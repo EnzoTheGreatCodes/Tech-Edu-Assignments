@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background: white;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 310px;
+    height: 376px;
+    overflow: hidden;
+    border: 2px solid #888;
+    border-radius: 15px;
+    background: white;
+}
+
+.calculator-screen {
+    height: 98px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 4px;
+    padding: 10px;
+    overflow: hidden;
+    background: white;
+    color: black;
+    text-align: right;
+}
+
+.previous-value {
+    min-height: 1.2em;
+    color: #a8c4b8;
+    font-size: 0.9rem;
+}
+
+.current-value {
+    width: 100%;
+    overflow-wrap: anywhere;
+    font-size: 2rem;
+}
+
+.delete-row {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 8px;
+    background: #888;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    padding: 8px 3px;
+}
+
+.key {
+    height: 20px;
+    padding: 0;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    background: #eee;
+    color: black;
+    cursor: pointer;
+    font: 13px Arial, sans-serif;
+}
+
+.key:hover {
+    background: #ddd;
+}
+
+.key:active {
+    background: #ccc;
+}
+
+.key:focus-visible {
+    outline: 2px solid #555;
+    outline-offset: 2px;
+}
+
+.key-operator {
+    background: #eee;
+}
+
+.key-delete {
+    width: 46px;
+    height: 30px;
+    border-color: #222;
+    border-radius: 4px;
+    background: black;
+    color: white;
+    font-size: 12px;
+}
+
+.key-delete:hover {
+    background: #333;
+}
